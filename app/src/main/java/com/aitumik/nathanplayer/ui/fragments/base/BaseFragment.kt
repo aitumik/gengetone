@@ -6,10 +6,9 @@ import android.support.v4.media.MediaBrowserCompat.MediaItem
 open class BaseFragment<T : MediaItem> {
 
     protected lateinit var dialog: AlertDialog
-    protected varl powerMenu: PowerMenu? = null
 
     private fun init() {
-        powerMenu =
+
     }
 }
 
