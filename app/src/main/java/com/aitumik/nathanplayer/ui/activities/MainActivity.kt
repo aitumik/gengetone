@@ -22,9 +22,13 @@ class MainActivity : BaseActivity() {
     }
 
     private fun init(savedInstanceState: Bundle?) {
-        viewModel
+        viewModel.binding =
         if(savedInstanceState == null) {
-
+            replaceFragment()
         }
+    }
+
+    fun replaceFragment() {
+
     }
 }
