@@ -1,4 +1,11 @@
 package com.aitumik.nathanplayer.utils
 
-class SettingsUtility {
+import android.content.Context
+import android.content.SharedPreferences
+
+class SettingsUtility(context: Context) {
+    private val sharedPreferences: SharedPreferences
+        get() {
+            TODO()
+        }
 }

@@ -1,6 +1,7 @@
 package com.aitumik.nathanplayer.ui.activities
 
 import android.os.Bundle
+import androidx.databinding.DataBindingUtil
 import com.aitumik.nathanplayer.R
 import com.aitumik.nathanplayer.ui.activities.base.BaseActivity
 import com.aitumik.nathanplayer.ui.viewmodels.MainViewModel
@@ -18,11 +19,10 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
     }
 
     private fun init(savedInstanceState: Bundle?) {
-        viewModel.binding =
+        viewModel.binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
         if(savedInstanceState == null) {
             replaceFragment()
         }

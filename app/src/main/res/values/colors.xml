@@ -1,6 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<!-- Accent Color #DB5151 E34A4C 7874D1-->
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimaryBlack">#000000</color>
+    <color name="colorPrimaryDarkBlack">#000000</color>
+    <color name="colorAccentBlack">@color/colorAccent</color>
+    <color name="colorAccentBlackOpacity">#800788F1</color>
+    <color name="colorPrimaryBlackSecondary">#000000</color>
+    <color name="colorPrimaryBlackSecondary2">#262626</color>
+    <color name="colorPrimaryBlackOpacity">#4D000000</color>
+    <color name="colorTitleTextBlack">#FCFAFD</color>
+    <color name="colorSubTitleTextBlack">#CECECE</color>
+    <color name="colorBodyTextBlack">#8E8E8E</color>
+
+    <color name="colorPrimary">#19191A</color>
+    <color name="colorPrimaryDark">#19191A</color>
+    <color name="colorAccentDark">@color/colorAccent</color>
+    <color name="colorAccentDarkOpacity">#800788F1</color>
+    <color name="colorPrimaryDarkSecondary">#19191A</color>
+    <color name="colorPrimaryDarkSecondary2">#2C2D2E</color>
+    <color name="colorPrimaryDarkOpacity">#4D19191A</color>
+    <color name="colorTitleTextDark">#E1E3E6</color>
+    <color name="colorSubTitleTextDark">#CECECE</color>
+    <color name="colorBodyTextDark">#76787A</color>
+
+    <color name="colorPrimaryLight">#F2F2F2</color>
+    <color name="colorPrimaryDarkLight">#F2F2F2</color>
+    <color name="colorAccentLight">@color/colorAccent</color>
+    <color name="colorAccentLightOpacity">#800788F1</color>
+    <color name="colorPrimaryLightSecondary">#F2F2F2</color>
+    <color name="colorPrimaryLightSecondary2">#FCFCFC</color>
+    <color name="colorPrimaryLightOpacity">#F2F2F2</color>
+    <color name="colorTitleTextLight">#252525</color>
+    <color name="colorSubTitleTextLight">#626262</color>
+    <color name="colorBodyTextLight">#878787</color>
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="error">#dd4254</color>
+    <color name="success">#339A04</color>
+
+    <color name="colorAccent">#0788F1</color>
+    <color name="primary">#F2F2F2</color>
+    <color name="gray">#DDDDDD</color>
+
+    <color name="colorPrimarySecondary">#ffff</color>
+    <color name="colorPrimarySecondary2">#ffff</color>
+
+    <color name="ic_launcher_background">#262626</color>
 </resources>

@@ -1,5 +1,154 @@
+<!--
+  ~ Copyright (c) 2020. Carlos René Ramos López. All rights reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
 <resources>
-    <string name="app_name">nathanplayer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name" translatable="false">NathanPlayer</string>
+    <string name="hint_msg">Search for songs, artists &amp; albums.</string>
+    <string name="cover" translatable="false" />
+    <string name="title">Title</string>
+    <string name="album">Album</string>
+    <string name="artist">Artist</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="separator" translatable="false">\u2022</string>
+    <string name="with_separator" translatable="false">%s \u2022 %s</string>
+    <string name="songs">Tracks</string>
+    <string name="song">Track</string>
+    <string name="favorites">Favorites</string>
+    <string name="playlists">Playlists</string>
+    <string name="folders">Folders</string>
+    <string name="folder">Folder</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="def_time" translatable="false">00:00</string>
+    <string name="time_separator" translatable="false">\u0020 / \u0020</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="sort_title">Sort Modes</string>
+    <string name="sort_msg">Sort by</string>
+    <string name="sort_az" translatable="false">A-Z</string>
+    <string name="sort_za" translatable="false">Z-A</string>
+    <string name="sort_year">Year</string>
+    <string name="sort_last_added">Last Added</string>
+    <string name="sort_duration">Duration</string>
+    <string name="no_results">No Results</string>
+    <string name="library">Library</string>
+    <string name="track_number" translatable="false">0</string>
+    <string name="unknown">Unknown</string>
+    <string name="no_track" translatable="false">-</string>
+    <string name="now_playing">Now playing</string>
+    <string name="now_transition" translatable="false">now_playing_transition_name</string>
+    <string name="mini_transition" translatable="false">mini_transition_name</string>
+    <string name="new_playlist">New Playlist</string>
+    <string name="no_playlist">No Playlists</string>
+    <string name="no_songs">No Tracks</string>
+    <string name="play">Play</string>
+    <string name="add">Add</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="create_playlist">Creating Playlist</string>
+    <string name="create_playlist_btn">Create</string>
+    <string name="choose_playlist">Please, choose a playlist.</string>
+    <string name="playlist_added_error">Could not create playlist \"%s\".</string>
+    <string name="playlist_added_success">Playlist added successfully</string>
+    <string name="input_hint">Enter a name</string>
+    <string name="no_permission">Permissions were not Granted</string>
+    <string name="no_folders">No Folders</string>
+    <string name="remove">Remove</string>
+    <string name="theme_title">Themes</string>
+    <string name="default_theme">System Default</string>
+    <string name="light_theme">Light</string>
+    <string name="dark_theme">Dark</string>
+    <string name="black_theme">Black</string>
+    <string name="appearance">Appearance</string>
+    <string name="theme_description">Choose one of these BeatPlayer themes.</string>
+    <string name="no_lyrics">Sorry, We can\'t get lyrics for this song.</string>
+    <string name="deleted_ok">Track deleted successfully.</string>
+    <string name="deleted_err">We can\'t delete the song now.</string>
+    <string name="unavailable">Unable to play song.</string>
+    <string name="playlist">Playlist</string>
+    <string name="delete_conf">Are you sure you want to delete the song \"%s\" from your device.</string>
+    <string name="delete_conf_title">Delete Confirmation</string>
+    <string name="select_tracks">Select Tracks</string>
+    <string name="all">All</string>
+    <string name="done">Done</string>
+    <string name="no_albums">No Albums</string>
+    <string name="no_favorites">No Favorite Music</string>
+    <string name="favorites_tip">Tap the heart icon on \"Now Playing, Albums, Artists or Folders\". Your favorite music will be listed here.</string>
+    <string name="favorite_music">Favorite Music</string>
+    <string name="no_artists">No Artists</string>
+    <string name="song_added_success">The song was added successfully.</string>
+    <string name="song_added_error">Track could not added to playlist.</string>
+    <string name="playlist_deleted_error">Playlist \"%s\" could not deleted.</string>
+    <string name="playlist_deleted_success">Playlist \"%s\" deleted successfully.</string>
+    <string name="retry">Retry</string>
+    <string name="song_no_fav_ok">Removed from your favorite music.</string>
+    <string name="song_fav_ok">Added to your favorite music.</string>
+    <string name="album_no_fav_ok">Album removed from favorites.</string>
+    <string name="album_fav_ok">Album added to favorites.</string>
+    <string name="folder_no_fav_ok">Folder removed from favorites.</string>
+    <string name="folder_fav_ok">Folder added to your favorites.</string>
+    <string name="artist_no_fav_ok">Artist removed from favorites.</string>
+    <string name="artist_fav_ok">Artist added to your favorites.</string>
+    <string name="playlist_name_error">Playlist name already exists.</string>
+    <string name="settings_theme_description">Auto, Light, Dark \u0026 Black</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">OK</string>
+    <string name="search_tip">Type the name of an album, an artist or a song and you\'ll see the results here.</string>
+    <string name="all_songs">All tracks</string>
+    <string name="no_eq">Your device does not have a equalizer.</string>
+    <string name="playlist_tip">Create some playlists, and they\'ll be listed here.</string>
+    <string name="op_err">An error has occurred</string>
+    <string name="album_count">Album Count</string>
+    <string name="song_count">Song Count</string>
+    <string name="edit_lyrics">Edit Lyrics</string>
+    <string name="new_lyrics">Please, type or paste the new track lyrics in the text field below.</string>
+    <string name="edit_lyrics_hint">Enter the track lyrics</string>
+    <string name="empty_lyrics">This track has no lyrics yet.</string>
+    <string name="save">Save</string>
+    <string name="lyrics_edit_error">Has occurred an error saving the track lyrics</string>
+    <string name="sync_lyrics">Sync Lyrics</string>
+    <string name="lyrics_type">What do you want to do?</string>
+    <string name="lyrics_tip">Please, select the option you want to use.</string>
+    <string name="others">Others</string>
+    <string name="cannot_read_file">Cannot read the file \"%s\".</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="external_storage">SD Card</string>
+    <string name="queue_title">Playing Queue</string>
+    <string name="queue_msg">Up Next</string>
+    <string name="raw_error">Could not generate the song graph.</string>
+    <string name="normal_cover_transition">Normal</string>
+    <string name="depth_page_cover_transition">Depth</string>
+    <string name="cube_cover_transition">Cube</string>
+    <string name="cover_transition">Cover Transition</string>
+    <string name="cover_transition_msg">Please, select a cover transition</string>
+    <string name="cover_transition_description">Transition effect when a song is changed.</string>
+
+    <plurals name="number_of_songs">
+        <item quantity="zero">%d Tracks</item>
+        <item quantity="one">%d Track</item>
+        <item quantity="other">%d Tracks</item>
+    </plurals>
+
+    <plurals name="number_of_albums">
+        <item quantity="zero">%d Albums</item>
+        <item quantity="one">%d Album</item>
+        <item quantity="other">%d Albums</item>
+    </plurals>
+
+    <plurals name="number_of_artists">
+        <item quantity="zero">%d Artists</item>
+        <item quantity="one">%d Artist</item>
+        <item quantity="other">%d Artists</item>
+    </plurals>
 </resources>

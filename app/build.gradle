@@ -12,7 +12,6 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -21,6 +20,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    dataBinding {
+        enabled = true
     }
 }
 
@@ -67,7 +70,6 @@ dependencies {
     implementation 'androidx.palette:palette-ktx:1.0.0'
 
     // ExoPlayer
-    implementation 'com.google.android.exoplayer:exoplayer-core:2.12.2'
 
     // DiscreteScrollview
     implementation 'com.yarolegovich:discrete-scrollview:1.5.1'

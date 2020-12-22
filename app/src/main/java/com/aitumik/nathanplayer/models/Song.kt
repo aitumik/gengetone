@@ -1,7 +1,6 @@
 package com.aitumik.nathanplayer.models
 
 import android.database.Cursor
-import android.support.v4.media.MediaBrowserCompat
 import com.google.gson.Gson
 
 data class Song (
@@ -18,7 +17,7 @@ data class Song (
         var isSelected: Boolean = false,
         var playListId: Long = -1,
         var played: Boolean = false,
-        ): MediaItem(id) {
+        ){
                 companion object {
                         fun createFromCursor(cursor: Cursor,album_id: Long = 0): Song {
                                 return Song(
@@ -27,10 +26,10 @@ data class Song (
                                         artist = cursor.getString(2),
                                         album = cursor.getString(3),
                                         duration = cursor.getInt(4),
-                                        trackNumber = cursor.getInt(5).fix(),
+                                        trackNumber = cursor.getInt(5),
                                         artistId = cursor.getLong(6),
                                         albumId =  if(album_id == 0L) cursor.getLong(7) else album_id,
-                                        path = getSongUri(cursor.getLong(0)).toString()
+//                                        path = getSongUri(cursor.getLong(0)).toString()
                                 )
                         }
                 }
