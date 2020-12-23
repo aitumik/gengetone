@@ -39,13 +39,9 @@ open class DBHelper(context: Context?, factory: SQLiteDatabase.CursorFactory? = 
         }
     }
 
-    override fun onCreate(db: SQLiteDatabase?) {
-        TODO("Not yet implemented")
-    }
+    override fun onCreate(db: SQLiteDatabase?) {}
 
-    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        TODO("Not yet implemented")
-    }
+    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {}
 
 
 }
