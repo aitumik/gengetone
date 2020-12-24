@@ -47,7 +47,6 @@ open class BaseActivity : RequestPermissionActivity() {
 
     private fun init() {
         currentTheme = settingsUtility.currentTheme
-        powerMenu = initPopupMenu().setOnMenuItemClickListener(onMenuItemClickListener).build()
     }
 
     private fun setAppTheme(current_theme: String) {

@@ -38,8 +38,4 @@ class Favourite (
         TODO("Implement other stuff here")
     }
 
-    override fun compare(other: MediaBrowserCompat.MediaItem): Boolean {
-        other as Favourite
-        return id == other.id
-    }
 }

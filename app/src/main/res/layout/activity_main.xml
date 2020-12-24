@@ -36,6 +36,30 @@
                 android:scaleX="0"
                 android:scaleY="0" />
 
+        <androidx.cardview.widget.CardView
+                android:id="@+id/bottom_controls"
+                cardElevation="25dp"
+                android:onClick="search"
+                android:orientation="vertical"
+                android:backgroundTint="@color/transparent"
+                android:layout_width="match_parent"
+                layout_constraintTop_toBottomOf="@id/nav_host_fragment"
+                android:layout_height="72dp">
+
+            <RelativeLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/mini_player_frame"
+                    layout_constraintTop_toOf="parent"
+                    android:layout_height="match_parent">
+
+                <View
+                        android:background="@drawable/mini_player_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

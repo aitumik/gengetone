@@ -1,4 +1,5 @@
 package com.aitumik.nathanplayer.utils
 
-class NathanConstants {
+object NathanConstants {
+   const val LIBRARY = "library_fragment"
 }

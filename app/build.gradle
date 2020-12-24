@@ -73,4 +73,7 @@ dependencies {
 
     // DiscreteScrollview
     implementation 'com.yarolegovich:discrete-scrollview:1.5.1'
+
+    //card view
+    implementation "androidx.cardview:cardview:1.0.0"
 }
