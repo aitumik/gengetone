@@ -1,6 +1,7 @@
 package com.aitumik.nathanplayer.models
 
 import android.database.Cursor
+import android.support.v4.media.MediaBrowserCompat
 
 class Favourite (
     var id: Long = -1,
@@ -27,5 +28,18 @@ class Favourite (
 
     fun columnNames(): Array<String> {
         return arrayOf( )
+    }
+
+    fun values(): Array<String> {
+        return arrayOf("$id",title,artist,"$artistId","$songCount","$year",type)
+    }
+
+    fun getIdByType(): Long {
+        TODO("Implement other stuff here")
+    }
+
+    override fun compare(other: MediaBrowserCompat.MediaItem): Boolean {
+        other as Favourite
+        return id == other.id
     }
 }

@@ -14,7 +14,7 @@
 <resources>
     <string name="app_name" translatable="false">NathanPlayer</string>
     <string name="hint_msg">Search for songs, artists &amp; albums.</string>
-    <string name="cover" translatable="false" />
+    <string name="cover" translatable="false"/>
     <string name="title">Title</string>
     <string name="album">Album</string>
     <string name="artist">Artist</string>
@@ -84,7 +84,9 @@
     <string name="done">Done</string>
     <string name="no_albums">No Albums</string>
     <string name="no_favorites">No Favorite Music</string>
-    <string name="favorites_tip">Tap the heart icon on \"Now Playing, Albums, Artists or Folders\". Your favorite music will be listed here.</string>
+    <string name="favorites_tip">Tap the heart icon on \"Now Playing, Albums, Artists or Folders\". Your favorite music
+        will be listed here.
+    </string>
     <string name="favorite_music">Favorite Music</string>
     <string name="no_artists">No Artists</string>
     <string name="song_added_success">The song was added successfully.</string>
@@ -151,4 +153,6 @@
         <item quantity="one">%d Artist</item>
         <item quantity="other">%d Artists</item>
     </plurals>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

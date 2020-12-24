@@ -1,9 +1,12 @@
 package com.aitumik.nathanplayer.ui.activities
 
 import android.os.Bundle
+import androidx.annotation.NonNull
 import androidx.databinding.DataBindingUtil
 import com.aitumik.nathanplayer.R
 import com.aitumik.nathanplayer.ui.activities.base.BaseActivity
+import com.aitumik.nathanplayer.ui.fragments.LibraryFragment
+import com.aitumik.nathanplayer.extensions.replaceFragment
 import com.aitumik.nathanplayer.ui.viewmodels.MainViewModel
 import com.aitumik.nathanplayer.ui.viewmodels.SongDetailViewModel
 import com.aitumik.nathanplayer.ui.viewmodels.SongViewModel
@@ -26,9 +29,5 @@ class MainActivity : BaseActivity() {
         if(savedInstanceState == null) {
             replaceFragment()
         }
-    }
-
-    fun replaceFragment() {
-
     }
 }

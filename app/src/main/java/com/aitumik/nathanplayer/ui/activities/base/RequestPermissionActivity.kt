@@ -8,12 +8,14 @@ open class RequestPermissionActivity : AppCompatActivity() {
     companion object {
         private const val REQUEST_PERMISSIONS_CODE = 7444
     }
+
+    protected var permissionsGranted: Boolean = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         verify();
     }
 
-    //function to verify permission
     private fun verify() {
         //TODO verify all the permissions here
     }
@@ -24,6 +26,10 @@ open class RequestPermissionActivity : AppCompatActivity() {
 
     private fun isWriteStoragePermissionGranted(): Boolean {
         return true;
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
     }
 
 

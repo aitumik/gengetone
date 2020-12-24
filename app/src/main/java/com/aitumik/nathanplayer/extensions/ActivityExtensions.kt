@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.aitumik.nathanplayer.R
 
-class ActivityExtensions {
+open class ActivityExtensions {
 
     fun Activity?.addFragment(
         @IdRes id: Int = R.id.main_container,
