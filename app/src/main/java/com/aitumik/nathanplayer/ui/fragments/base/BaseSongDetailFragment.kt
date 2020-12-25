@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.aitumik.nathanplayer.R
 import com.aitumik.nathanplayer.models.Song
+import com.aitumik.nathanplayer.ui.viewmodels.SongDetailViewModel
 import com.aitumik.nathanplayer.ui.viewmodels.SongViewModel
 
 class BaseSongDetailFragment : BaseFragment<Song>() {
@@ -27,9 +28,14 @@ class BaseSongDetailFragment : BaseFragment<Song>() {
     }
 
     private fun showHideBottomSheet() {
-        val currentData = SongViewModel.currentData.value ?: null
+        val currentData = songDetailViewModel.currentData.value ?: return
         if(currentData.id == 0L) return
-        val fragment = requireActivity().supportFragmentManager
+        val fragment = requireActivity().supportFragmentManager.findFragmentById(R.id.nav_host_fragment)
+        if (fragment is SongDetailFragment || fragment is LyricFragment) {
+            TODO("hide mini player")
+        } else {
+            TODO("show miniplayer")
+        }
 
     }
 }

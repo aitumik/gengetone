@@ -2,11 +2,16 @@ package com.aitumik.nathanplayer.ui.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.aitumik.nathanplayer.models.MediaItemData
 import com.aitumik.nathanplayer.repository.FavouritesRepository
 import com.aitumik.nathanplayer.ui.viewmodels.base.CoroutineViewModel
 import kotlinx.coroutines.Dispatchers.Main
 
 class SongDetailViewModel(private val fav: FavouritesRepository): CoroutineViewModel(Main) {
+
+    private val currentDataBase = MutableLiveData<MediaItemData>()
+    val currentData: LiveData<MediaItemData> = currentDataBase
+
     private val timeLiveData = MutableLiveData<Int>()
     val time: LiveData<Int> = timeLiveData
 
