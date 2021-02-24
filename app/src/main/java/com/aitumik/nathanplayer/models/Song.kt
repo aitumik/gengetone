@@ -65,9 +65,6 @@ data class Song (
                                 )
                         }
 
-                        fun createFromAudioFile(audioFile: AudioFile): Song {
-
-                        }
                 }
 
         fun toMediaItem() {
