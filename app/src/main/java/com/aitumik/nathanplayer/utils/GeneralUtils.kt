@@ -1,9 +1,12 @@
 package com.aitumik.nathanplayer.utils
 
+import android.content.ContentUris.withAppendedId
 import android.content.res.Resources
 import android.content.Context
 import android.content.res.Configuration.ORIENTATION_PORTRAIT
+import android.graphics.Color
 import android.net.Uri
+import android.os.Build.VERSION.SDK_INT
 import android.os.ParcelFileDescriptor
 import android.widget.EditText
 import androidx.core.net.toFile
@@ -13,6 +16,7 @@ import java.io.File
 import java.io.FileInputStream
 import java.lang.Exception
 import java.net.URI
+import java.util.*
 
 object GeneralUtils {
 
@@ -60,4 +64,19 @@ object GeneralUtils {
     fun toggleShowKeyboard(context: Context, editText: EditText, show: Boolean): Boolean {
         return true;
     }
+
+    fun getTransformerFromString(transformerString: String) : BaseTransformer {
+        return when (transformerString) {
+            CUBE_TRANSFORMER -> CubeOutTransformer()
+        }
+    }
+
+    fun addColorOpacity(color: Int,opacity: Float): Int {
+        val colorHex = Integer.toHexString(color).toLowerCase(Locale.ROOT)
+        val opacityHex = Integer.toHexString((255 * opacity).toInt()).toLowerCase(Locale.ROOT)
+        return Color.parseColor("#${colorHex.replace("ff",opacityHex)}")
+    }
+
+    fun isOreo() = SDK_INT >= 0
+    fun getSongUri(songId: Long): Uri = withAppendedId(SONG_URI,songId)
 }
