@@ -45,4 +45,25 @@ class MainActivity : BaseActivity() {
             }
         }
     }
+    
+    private fun createPlayList(
+        name: String?,
+        selectedSong: List<Song>,
+        showOnEnd: Boolean = false
+    ) {
+        val id = playListViewModel.create(name!!,selectedSong)
+        if (id > 0) {
+            if (!showOnEnd) {
+                viwModel.binding.mainContainer.snackbar(
+                    SUCCESS,
+                    getString(R.string.playlist_added_success),
+                    LENGTH_SHORT
+                  )
+            }
+        }
+    }
+    
+    
+    fun playPauseClick(view: View) {
+    }
 }
