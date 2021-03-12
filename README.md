@@ -10,6 +10,7 @@ I am an android engineer who loves open source
   * LiveData
   * ViewModel
   * LifeCycle
+  * MutableLiveData
 
 * Architecture
   * MVVM Architecture(View - DataBinding - ViewModel - Model)
@@ -18,7 +19,7 @@ I am an android engineer who loves open source
 
 * Material Design
 * Retrofit and Gson
-* Timbe - logging
+* Timber - logging
 
 ## Contributing
 If you find this repository helpful or interesting please show some love and
