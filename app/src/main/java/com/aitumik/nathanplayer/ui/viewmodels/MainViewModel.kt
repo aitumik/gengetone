@@ -16,6 +16,6 @@ class MainViewModel(
     lateinit var binding: ActivityMainBinding
 
     private fun showSnackBar(view: View,resp: Int,type: Int) {
-        print("Hello")
+        print("Nathan Kimutai is the best person ever")
     }
 }
